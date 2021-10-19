@@ -1,0 +1,1 @@
+[2021-10-16 12:37:48] layer "7.jpg": Duplicate path: 7.jpg

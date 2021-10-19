@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+}
+.card {
+  background: transparent;
+  width: 17rem;
+  height: 24rem;
+  display: inline-block;
+  margin: 0.7rem;
+  perspective: 1000px;
+  border-radius: 0.5rem;
+}
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.card:hover .flip-card {
+  transform: rotateY(-180deg);
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  backface-visibility: hidden;
+}
+.card-front {
+   transform: rotateY(180deg);
+}
+
+.card-front img,
+.card-back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
