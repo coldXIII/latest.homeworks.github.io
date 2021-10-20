@@ -1,0 +1,43 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/png" href="img/vampire.png" sizes="32x32" />
+      <link type="text/css" rel="stylesheet" href="style.css" />
+      <title>Theatre des Vampires</title>
+    </head>
+    <body>
+      <main class="container">
+        <div class="search-form">
+          <h1 class="search-form__heading1 heading1">
+            <div class="favorite">
+              <button class="favorite__btn">My Favorites</button>
+            </div>
+          </h1>
+
+          <form class="search-form__form" name="searchForm">
+            <input type="text" name="search" placeholder="search movie..." />
+            <select name="type">
+              <option value="movie" selected>Movie</option>
+              <option value="series">Series</option>
+            </select>
+            <button type="submit">Search</button>
+          </form>
+        </div>
+
+        <div class="details"></div>
+
+        <div class="output"></div>
+
+        <div class="pagination">
+          <button class="pagination__more">
+            Show More <span class="pagination__count"></span>
+          </button>
+          <button class="pagination__clear-btn clear-btn">Clear List</button>
+        </div>
+      </main>
+
+      <script src="main.js"></script>
+    </body>
+  </html>
